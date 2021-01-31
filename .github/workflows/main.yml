@@ -1,20 +1,29 @@
 name: CI
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  workflow_dispatch:
+  - push
+  - pull_request
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
-
-      # Lint
-      - name: Lint
-        run: make lint
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install
+        run: |
+          make install
+        env:
+          CI: true
+      - name: Run linter
+        run: |
+          make lint
