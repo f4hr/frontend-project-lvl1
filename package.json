@@ -1,0 +1,25 @@
+{
+  "name": "@heltet/code",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Brain Games",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f4hr/frontend-project-lvl1.git"
+  },
+  "author": "Ilya Fakhrutdinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f4hr/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/f4hr/frontend-project-lvl1#readme"
+}
