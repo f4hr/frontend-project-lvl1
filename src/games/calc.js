@@ -1,4 +1,4 @@
-import { roundsCount, startGame } from '../index.js';
+import startGameEngine from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -22,7 +22,7 @@ const getExpressionResult = (operand1, operand2, operator) => {
   }
 };
 
-const generateRoundData = () => {
+const roundDataGenerator = () => {
   const operand1 = getRandomIntInclusive(1, 50);
   const operand2 = getRandomIntInclusive(1, 50);
   const operator = operators[getRandomIntInclusive(0, operators.length - 1)];
@@ -33,14 +33,8 @@ const generateRoundData = () => {
   return [question, correctAnswer];
 };
 
-const startCalcGame = () => {
-  const gameData = [];
-
-  for (let i = 0; i < roundsCount; i += 1) {
-    gameData.push(generateRoundData());
-  }
-
-  startGame(gameDescription, gameData);
+const startGame = () => {
+  startGameEngine(gameDescription, roundDataGenerator);
 };
 
-export default startCalcGame;
+export default startGame;

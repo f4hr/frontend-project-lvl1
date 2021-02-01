@@ -1,8 +1,8 @@
-import { roundsCount, startGame } from '../index.js';
+import startGameEngine from '../index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const generateRoundData = () => {
+const roundDataGenerator = () => {
   const number = Math.round(Math.random() * 100);
   const question = number;
   const isEven = (number % 2 === 0);
@@ -11,14 +11,8 @@ const generateRoundData = () => {
   return [question, correctAnswer];
 };
 
-const startEvenGame = () => {
-  const gameData = [];
-
-  for (let i = 0; i < roundsCount; i += 1) {
-    gameData.push(generateRoundData());
-  }
-
-  startGame(gameDescription, gameData);
+const startGame = () => {
+  startGameEngine(gameDescription, roundDataGenerator);
 };
 
-export default startEvenGame;
+export default startGame;
