@@ -10,4 +10,12 @@
 $ brain-even
 ```
 
-[![asciicast](https://asciinema.org/a/dhgegLULeKyp3rggwV1YuWh0a.svg)](https://asciinema.org/a/dhgegLULeKyp3rggwV1YuWh0a)
+[![asciicast](https://asciinema.org/a/H68BxTKc2CZFz9G2BfA15GE6g.svg)](https://asciinema.org/a/H68BxTKc2CZFz9G2BfA15GE6g)
+
+### Brain Calc
+
+```sh
+$ brain-calc
+```
+
+[![asciicast](https://asciinema.org/a/fIU53KsCUErRF3YtU1Jty7O9b.svg)](https://asciinema.org/a/fIU53KsCUErRF3YtU1Jty7O9b)
