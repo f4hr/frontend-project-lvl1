@@ -14,4 +14,23 @@ const gcd = (num1, num2) => {
   return Math.abs(num2);
 };
 
-export { gcd, isEven, getRandomIntInclusive };
+const isPrime = (num) => {
+  if (num <= 1) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.floor(num / 2); i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+export {
+  getRandomIntInclusive,
+  isEven,
+  gcd,
+  isPrime,
+};

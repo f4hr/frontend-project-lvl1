@@ -35,3 +35,11 @@ $ brain-progression
 ```
 
 [![asciicast](https://asciinema.org/a/H6b8EXVFub1tqE3Ti97FT9LSL.svg)](https://asciinema.org/a/H6b8EXVFub1tqE3Ti97FT9LSL)
+
+### Brain Prime
+
+```sh
+$ brain-prime
+```
+
+[![asciicast](https://asciinema.org/a/mhpDqdAU7nytjQm2o8pKpdbnT.svg)](https://asciinema.org/a/mhpDqdAU7nytjQm2o8pKpdbnT)
