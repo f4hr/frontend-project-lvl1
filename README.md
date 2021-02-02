@@ -27,3 +27,11 @@ $ brain-gcd
 ```
 
 [![asciicast](https://asciinema.org/a/c4Fed952YJnabPeCbmdtfMwCF.svg)](https://asciinema.org/a/c4Fed952YJnabPeCbmdtfMwCF)
+
+### Brain Progression
+
+```sh
+$ brain-progression
+```
+
+[![asciicast](https://asciinema.org/a/H6b8EXVFub1tqE3Ti97FT9LSL.svg)](https://asciinema.org/a/H6b8EXVFub1tqE3Ti97FT9LSL)
