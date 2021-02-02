@@ -1,12 +1,12 @@
 import startGameEngine from '../index.js';
+import { getRandomIntInclusive, isEven } from '../utils.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const roundDataGenerator = () => {
-  const number = Math.round(Math.random() * 100);
+  const number = getRandomIntInclusive(0, 100);
   const question = number;
-  const isEven = (number % 2 === 0);
-  const correctAnswer = (isEven) ? 'yes' : 'no';
+  const correctAnswer = (isEven(number)) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };

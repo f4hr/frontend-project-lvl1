@@ -1,13 +1,8 @@
 import startGameEngine from '../index.js';
+import { getRandomIntInclusive } from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
-
-const getRandomIntInclusive = (min, max) => {
-  const roundMin = Math.ceil(min);
-  const roundMax = Math.floor(max);
-  return Math.floor(Math.random() * (roundMax - roundMin + 1)) + roundMin;
-};
 
 const getExpressionResult = (operand1, operand2, operator) => {
   switch (operator) {

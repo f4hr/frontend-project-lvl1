@@ -19,3 +19,11 @@ $ brain-calc
 ```
 
 [![asciicast](https://asciinema.org/a/fIU53KsCUErRF3YtU1Jty7O9b.svg)](https://asciinema.org/a/fIU53KsCUErRF3YtU1Jty7O9b)
+
+### Brain GCD
+
+```sh
+$ brain-gcd
+```
+
+[![asciicast](https://asciinema.org/a/c4Fed952YJnabPeCbmdtfMwCF.svg)](https://asciinema.org/a/c4Fed952YJnabPeCbmdtfMwCF)

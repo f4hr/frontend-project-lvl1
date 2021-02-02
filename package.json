@@ -1,12 +1,13 @@
 {
   "name": "@heltet/code",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "description": "Brain Games",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
-    "brain-calc": "bin/brain-calc.js"
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js"
   },
   "engines": {
     "node": ">=14"
