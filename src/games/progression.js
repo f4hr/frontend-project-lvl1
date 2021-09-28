@@ -16,7 +16,7 @@ const generateProgression = (startNumber, commonDifference, progressionLength) =
   return progression;
 };
 
-const roundDataGenerator = () => {
+const generateRound = () => {
   const startNumber = getRandomIntInclusive(1, 10);
   const commonDifference = getRandomIntInclusive(1, 10);
   const progressionLength = getRandomIntInclusive(5, 10);
@@ -32,7 +32,7 @@ const roundDataGenerator = () => {
 };
 
 const startGame = () => {
-  startGameEngine(gameDescription, roundDataGenerator);
+  startGameEngine(gameDescription, generateRound);
 };
 
 export default startGame;

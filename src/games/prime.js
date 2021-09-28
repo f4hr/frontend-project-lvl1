@@ -3,7 +3,7 @@ import { getRandomIntInclusive, isPrime } from '../utils.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const roundDataGenerator = () => {
+const generateRound = () => {
   const randomNumber = getRandomIntInclusive(2, 100);
   const question = `${randomNumber}`;
 
@@ -13,7 +13,7 @@ const roundDataGenerator = () => {
 };
 
 const startGame = () => {
-  startGameEngine(gameDescription, roundDataGenerator);
+  startGameEngine(gameDescription, generateRound);
 };
 
 export default startGame;

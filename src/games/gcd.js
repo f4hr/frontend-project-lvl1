@@ -3,7 +3,7 @@ import { getRandomIntInclusive, gcd } from '../utils.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
-const roundDataGenerator = () => {
+const generateRound = () => {
   const num1 = getRandomIntInclusive(1, 50);
   const num2 = getRandomIntInclusive(1, 50);
   const question = `${num1} ${num2}`;
@@ -14,7 +14,7 @@ const roundDataGenerator = () => {
 };
 
 const startGame = () => {
-  startGameEngine(gameDescription, roundDataGenerator);
+  startGameEngine(gameDescription, generateRound);
 };
 
 export default startGame;

@@ -17,7 +17,7 @@ const getExpressionResult = (operand1, operand2, operator) => {
   }
 };
 
-const roundDataGenerator = () => {
+const generateRound = () => {
   const operand1 = getRandomIntInclusive(1, 50);
   const operand2 = getRandomIntInclusive(1, 50);
   const operator = operators[getRandomIntInclusive(0, operators.length - 1)];
@@ -29,7 +29,7 @@ const roundDataGenerator = () => {
 };
 
 const startGame = () => {
-  startGameEngine(gameDescription, roundDataGenerator);
+  startGameEngine(gameDescription, generateRound);
 };
 
 export default startGame;

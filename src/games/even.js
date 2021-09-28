@@ -3,7 +3,7 @@ import { getRandomIntInclusive, isEven } from '../utils.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const roundDataGenerator = () => {
+const generateRound = () => {
   const number = getRandomIntInclusive(0, 100);
   const question = number;
   const correctAnswer = (isEven(number)) ? 'yes' : 'no';
@@ -12,7 +12,7 @@ const roundDataGenerator = () => {
 };
 
 const startGame = () => {
-  startGameEngine(gameDescription, roundDataGenerator);
+  startGameEngine(gameDescription, generateRound);
 };
 
 export default startGame;
