@@ -1,7 +1,24 @@
 import startGameEngine from '../index.js';
-import { getRandomIntInclusive, isPrime } from '../utils.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const getRandomIntInclusive = (min, max) => (
+  Math.floor(Math.random() * (max - min + 1)) + min
+);
+
+const isPrime = (num) => {
+  if (num <= 1) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.floor(num / 2); i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
 
 const generateRound = () => {
   const randomNumber = getRandomIntInclusive(2, 100);

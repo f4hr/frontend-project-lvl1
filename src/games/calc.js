@@ -1,5 +1,4 @@
 import startGameEngine from '../index.js';
-import { getRandomIntInclusive } from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -16,6 +15,10 @@ const getExpressionResult = (operand1, operand2, operator) => {
       throw new Error(`Unknown operator "${operator}"`);
   }
 };
+
+const getRandomIntInclusive = (min, max) => (
+  Math.floor(Math.random() * (max - min + 1)) + min
+);
 
 const generateRound = () => {
   const operand1 = getRandomIntInclusive(1, 50);
