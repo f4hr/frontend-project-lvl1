@@ -1,8 +1,6 @@
-const getRandomIntInclusive = (min, max) => {
-  const roundMin = Math.ceil(min);
-  const roundMax = Math.floor(max);
-  return Math.floor(Math.random() * (roundMax - roundMin + 1)) + roundMin;
-};
+const getRandomIntInclusive = (min, max) => (
+  Math.floor(Math.random() * (max - min + 1)) + min
+);
 
 const isEven = (num) => (num % 2 === 0);
 
