@@ -13,7 +13,7 @@ const getExpressionResult = (operand1, operand2, operator) => {
     case '*':
       return operand1 * operand2;
     default:
-      return null;
+      throw new Error(`Unknown operator "${operator}"`);
   }
 };
 
