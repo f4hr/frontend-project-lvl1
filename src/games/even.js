@@ -1,10 +1,7 @@
 import startGameEngine from '../index.js';
+import getRandomIntInclusive from '../utils.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-const getRandomIntInclusive = (min, max) => (
-  Math.floor(Math.random() * (max - min + 1)) + min
-);
 
 const isEven = (num) => (num % 2 === 0);
 

@@ -1,12 +1,9 @@
 import startGameEngine from '../index.js';
+import getRandomIntInclusive from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
 const missingNumberReplacement = '..';
 const delimiter = ' ';
-
-const getRandomIntInclusive = (min, max) => (
-  Math.floor(Math.random() * (max - min + 1)) + min
-);
 
 const generateProgression = (startNumber, commonDifference, progressionLength) => {
   const progression = [];
